@@ -1,0 +1,159 @@
+/* ESTILOS SITIO LOGUIN */
+
+/* Animaciones */
+@keyframes Rotar {
+    from { transform: rotateY(0deg); } 
+    to { transform: rotateY(359deg); } 
+   }
+
+body{
+    background-image:radial-gradient(white 10%, brown 90%);
+    margin: 0;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    left:0;
+    top:0;
+    width:100vh;
+    }
+
+nav { width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(235, 234, 184);
+}
+
+i{color: beige;
+z-index: 9999;}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 70vh;
+}
+
+.container {
+    background-color: brown;
+    width: 50%;
+    border-radius: 26px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: -1px 0px 21px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 0px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 0px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+.img {
+    display: flex;
+    height: 15%;
+    width: 25%;
+    margin: 20px;
+   border-radius: 100px;
+   animation-name: Rotar;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+   
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input {
+    width: 60%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    margin: 10px;
+    letter-spacing: 0.6px;
+}
+
+.ingresar {
+    margin-top: 10px;
+    background: #390099;
+    color: white;
+    width: 60%;
+    height: 45px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.6px;
+}
+
+label{
+    width: 60%;
+}
+
+
+@media (max-width: 1440px) and (min-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 799px) {
+    .container {
+        width: 95%;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .form {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+   
+}
+
+ footer{
+    background-color: beige;    
+     text-align: center;
+     width: 100%;
+     padding: 1em;
+     align-self: flex-end;
+     color: brown;
+     box-shadow: 0 0 40px 0 brown;
+    
+
+ }
+
+ footer a{
+     color: rgb(82, 14, 14);
+     margin:0px;
+     padding:0px
+ }
